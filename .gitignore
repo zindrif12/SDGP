@@ -34,3 +34,9 @@ build/
 
 # Other
 /node_modules
+
+# Remove this if you use yarn
+yarn.lock
+
+# ml_flast_server
+/ml_flask_server/**/__pycache__/
