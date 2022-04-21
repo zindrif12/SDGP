@@ -5,6 +5,8 @@ import { useHistory } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Reorder from './Reorder';
 
+import { STOCK_STATUS } from '../constants/stock_status';
+
 StockReminder.propTypes = {
   MatStockList: PropTypes.array,
 };
@@ -14,7 +16,7 @@ StockReminder.defaultProps = {
 };
 
 function StockReminder(props) {
-  const[predictions, setPredictions] = useState([]);
+  const [predictions, setPredictions] = useState([]);
   function onDelete1(id) {
     // fetch("http://localhost:8080/api/v1/getExpireInfo/")
     alert('Deleted');
@@ -39,7 +41,7 @@ function StockReminder(props) {
   const { MatStockList } = props;
 
   useEffect(() => {
-    // These two variables should be set with data queried from the database and 
+    // These two variables should be set with data queried from the database and
     // passed down here
     const remaindToBeDynamic = [
       20, 10, 15, 20, 45, 10, 25, 35, 5, 15, 40, 20, 25, 15, 10, 20, 20, 5, 10, 15, 10, 20, 25, 15, 12, 24, 45, 23, 12,
@@ -53,20 +55,16 @@ function StockReminder(props) {
     const predictionParams = [];
 
     MatStockList.forEach((stock) => {
-      const remainder = [];
-      const purchased = [];
+      const stockStatus = getStockStatus(stock.id);
 
-      for (let counter = 0; counter < 35; counter++) {
-        remainder.push(remaindToBeDynamic[counter]);
-        purchased.push(purchasedToBeDynamic[counter]);
+      if (stockStatus) {
+        predictionParams.push({
+          stock_id: stock.id,
+          stock_name: stock.mtr_name,
+          remainder: stockStatus.remainder,
+          purchased: stockStatus.purchased,
+        });
       }
-
-      predictionParams.push({
-        stock_id: stock.id,
-        stock_name: stock.mtr_name,
-        remainder,
-        purchased,
-      });
     });
 
     if (predictionParams.length > 0) {
@@ -99,6 +97,12 @@ function StockReminder(props) {
     return fetches;
   };
 
+  const getStockStatus = (stockId) => {
+    return STOCK_STATUS.find((status) => {
+      return status.stock_id == stockId;
+    });
+  };
+
   const getPredictionByStockId = (stockId) => {
     const found = predictions.find((pred) => {
       return pred.stock_id == stockId;
@@ -109,7 +113,7 @@ function StockReminder(props) {
     }
 
     return 'Not found';
-  }
+  };
 
   return (
     <div>
