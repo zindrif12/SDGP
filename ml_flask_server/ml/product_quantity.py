@@ -4,8 +4,18 @@ from sklearn.linear_model import LinearRegression
 import pickle
 import matplotlib.pyplot as plt
 
-def perform_prediction():
-  dataset = pd.read_csv('/tmp/data.csv')
+def perform_prediction(stock_id, remainder, purchased):
+  
+  df = pd.DataFrame({
+    "Remainder": pd.Series(remainder),
+    "Purchased": pd.Series(purchased)
+  })
+
+  csv_filename = '/tmp/data' + str(stock_id) + '.csv'
+
+  df.to_csv(csv_filename)
+  dataset = pd.read_csv(csv_filename, usecols=["Remainder", "Purchased"])
+
   x = dataset.iloc[:,:-1].values
   y = dataset.iloc[:,1].values
 
@@ -17,6 +27,3 @@ def perform_prediction():
   pred_result = model.predict(x_test)
 
   return pred_result
-
-# Above code is directly copied from the `product1.py` file and removed unnecessary code 
-# that is not required to get just the predicted values. 
