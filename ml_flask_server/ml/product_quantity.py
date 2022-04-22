@@ -11,7 +11,7 @@ def perform_prediction(stock_id, remainder, purchased):
     "Purchased": pd.Series(purchased)
   })
 
-  csv_filename = '/tmp/data' + str(stock_id) + '.csv'
+  csv_filename = str(stock_id) + '.csv'
 
   df.to_csv(csv_filename)
   dataset = pd.read_csv(csv_filename, usecols=["Remainder", "Purchased"])
