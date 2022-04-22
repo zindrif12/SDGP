@@ -46,11 +46,11 @@ const Home = props => {
           <div className="col-4">
             <div className="card1" style={{ textAlign: 'center' }} width="200" height="200">
               <div className="card1-image">
-                <img src="images/warehouse.png" width="200" height="200" padding="30" />
+                <img src="images/stocks.png" width="200" height="200" padding="30" />
               </div>
               <div className="card-body text-dark">
                 <h4 style={{ color: 'white' }} className="cad-title">
-                  <b>Stock Reminder</b>
+                  <b>Stock Prediction</b>
                 </h4>
                 <a href="http://localhost:3000/stockReminder" className="btn btn-success">
                   Start
