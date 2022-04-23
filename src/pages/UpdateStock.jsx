@@ -111,7 +111,7 @@ export default class UpdateStock extends Component {
                                 </div>
 
                                 <div className="form-group">
-                                    <label>Material no:</label>
+                                    <label>Product no:</label>
                                     <input placeholder="Material no" name="mtr_no" className="form-control"
                                     value={this.state.mtr_no} onChange={this.changeMaterialID1Handler}/>
                                 </div>

@@ -126,17 +126,17 @@ export default class UpdateMaterial extends Component {
             <div className="container">
                 <div className="row">
                     <div className="card col-md-6 offset-md-3 offset-md-3">
-                        <h3 className="text-center">Update Material</h3>
+                        <h3 className="text-center">Update Product</h3>
                         <div className="card-body">
                             <form>
                                  <div className="form-group">
-                                    <label>Material No.:</label>
+                                    <label>Product No.:</label>
                                     <input placeholder="Material No." name="mtr_no" className="form-control"
                                     value={this.state.mtr_no} onChange={this.changeMaterialNoHandler}/>
                                 </div> 
 
                                 <div className="form-group">
-                                    <label>Material Name:</label>
+                                    <label>Product Name:</label>
                                     <input placeholder="Material Name" name="mtr_name" className="form-control"
                                     value={this.state.mtr_name} onChange={this.changeMaterialNameHandler}/>
                                 </div>
