@@ -133,7 +133,7 @@ export default class UpdateStock extends Component {
 
                                 <button className="btn btn-success" onClick={this.updateStock}
                                 >Update</button>
-                                <button className="btn btn-danger" onClick={this.cancle.bind(this)} style={{marginLeft: "10px"}}>Cancle</button>
+                                <button className="btn btn-danger" onClick={this.cancle.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
 
 
 

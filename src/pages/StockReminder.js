@@ -117,7 +117,7 @@ function StockReminder(props) {
 
   return (
     <div>
-      <h2 className="text-center">Stock Reminder</h2>
+      <h2 className="text-center">Stock Prediction</h2>
       <div className="row"></div>
 
       <div className="row">

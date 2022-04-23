@@ -180,7 +180,7 @@ export default class UpdateMaterial extends Component {
                                 
 
                                 <button className="btn btn-success" onClick={this.updateMaterial}>Save</button>
-                                <button className="btn btn-danger" onClick={this.cancle.bind(this)} style={{marginLeft: "10px"}}>Cancle</button>
+                                <button className="btn btn-danger" onClick={this.cancle.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
 
 
 
