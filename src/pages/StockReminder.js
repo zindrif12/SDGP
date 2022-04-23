@@ -124,8 +124,8 @@ function StockReminder(props) {
         <table style={{ marginLeft: '15px' }} className="table table-striped table-bordered">
           <thead>
             <tr>
-              <th>Material Name</th>
-              <th>Material No.</th>
+              <th>Products Name</th>
+              <th>Products No.</th>
               <th>Prediction</th>
               <th>Actions</th>
             </tr>
