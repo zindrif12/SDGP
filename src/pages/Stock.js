@@ -78,7 +78,7 @@ searchArray=[];
                                 <th>Stock No</th>
                                 <th>Expire Date</th>
                                 <th>Manufacture Date</th>
-                                <th>Material No</th>
+                                <th>Products No</th>
                                 <th>Quantity</th>
                                 <th>Received Date</th>
                                 <th>Actions</th>

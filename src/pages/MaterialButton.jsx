@@ -152,20 +152,20 @@ export default class MaterialButton extends Component {
             <div className="container">
                 <div className="row">
                     <div className="card col-md-6 offset-md-3 offset-md-3">
-                        <h3 className="text-center">Create Material</h3>
+                        <h3 className="text-center">Create Product</h3>
                         <div className="card-body">
                             <form>
 
                                 
                                  <div className="form-group">
-                                    <label>Material No.:</label>
+                                    <label>Product No.:</label>
                                     <input placeholder="Material No." name="mtr_no" className="form-control"
                                     value={this.state.mtr_no} onChange={this.changeMaterialNoHandler}/>
                                     <div style={{fontSize:12,color:"red"}}>{this.state.nameError}</div>
                                 </div> 
 
                                 <div className="form-group">
-                                    <label>Material Name:</label>
+                                    <label>Product Name:</label>
                                     <input placeholder="Material Name" name="mtr_name" className="form-control"
                                     value={this.state.mtr_name} onChange={this.changeMaterialNameHandler}/>
                                     <div style={{fontSize:12,color:"red"}}>{this.state.nameError}</div>

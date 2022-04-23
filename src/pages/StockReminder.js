@@ -117,15 +117,15 @@ function StockReminder(props) {
 
   return (
     <div>
-      <h2 className="text-center">Stock Reminder</h2>
+      <h2 className="text-center">Stock Prediction</h2>
       <div className="row"></div>
 
       <div className="row">
         <table style={{ marginLeft: '15px' }} className="table table-striped table-bordered">
           <thead>
             <tr>
-              <th>Material Name</th>
-              <th>Material No.</th>
+              <th>Products Name</th>
+              <th>Products No.</th>
               <th>Prediction</th>
               <th>Actions</th>
             </tr>
