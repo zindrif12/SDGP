@@ -50,7 +50,7 @@ function ExpiryReminder(props){
 
                         <thead>
                             <tr>
-                            <th>Material name</th>
+                            <th>Product name</th>
                                 <th>Stock No.</th>
                                 <th>Expiration Date</th>
                                 <th>Quantity</th>
