@@ -50,7 +50,7 @@ const Home = props => {
               </div>
               <div className="card-body text-dark">
                 <h4 style={{ color: 'white' }} className="cad-title">
-                  <b>Stock Reminder</b>
+                  <b>Stock Prediction</b>
                 </h4>
                 <a href="http://localhost:3000/stockReminder" className="btn btn-success">
                   Start
@@ -82,7 +82,7 @@ const Home = props => {
               </div>
               <div className="card-body text-dark">
                 <h4 style={{ color: 'white' }} className="cad-title">
-                  <b>Create Materials</b>
+                  <b>Add Products</b>
                 </h4>
                 <a href="http://localhost:3000/products" className="btn btn-success">
                   Start

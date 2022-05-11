@@ -50,9 +50,9 @@ export default class Products extends Component {
     render(){
         return(
             <div>
-                <h2 className="text-center">Material Details</h2>
+                <h2 className="text-center">Product Details</h2>
                 <div className="row">
-                    <button style={{marginLeft:"15px"}} className="btn btn-primary" onClick={this.addMaterial}>Add Material</button>
+                    <button style={{marginLeft:"15px"}} className="btn btn-primary" onClick={this.addMaterial}>Add New Product</button>
 
                 </div>
 

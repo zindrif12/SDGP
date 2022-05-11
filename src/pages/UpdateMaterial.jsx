@@ -130,13 +130,13 @@ export default class UpdateMaterial extends Component {
                         <div className="card-body">
                             <form>
                                  <div className="form-group">
-                                    <label>Material No.:</label>
+                                    <label>Product No.:</label>
                                     <input placeholder="Material No." name="mtr_no" className="form-control"
                                     value={this.state.mtr_no} onChange={this.changeMaterialNoHandler}/>
                                 </div> 
 
                                 <div className="form-group">
-                                    <label>Material Name:</label>
+                                    <label>Product Name:</label>
                                     <input placeholder="Material Name" name="mtr_name" className="form-control"
                                     value={this.state.mtr_name} onChange={this.changeMaterialNameHandler}/>
                                 </div>
@@ -180,7 +180,7 @@ export default class UpdateMaterial extends Component {
                                 
 
                                 <button className="btn btn-success" onClick={this.updateMaterial}>Save</button>
-                                <button className="btn btn-danger" onClick={this.cancle.bind(this)} style={{marginLeft: "10px"}}>Cancle</button>
+                                <button className="btn btn-danger" onClick={this.cancle.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
 
 
 

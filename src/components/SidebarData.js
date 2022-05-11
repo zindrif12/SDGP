@@ -16,14 +16,14 @@ export const SidebarData = [
 
 
   {
-    title: 'Stock Reminder',
+    title: 'Stock Prediction',
     path: '/stockReminder',
     icon:<FaIcons.FaClock/>,
     cName: 'nav-text'
     
   },
   {
-    title: 'Create Materials',
+    title: 'Add Products',
     path: '/Products',
     icon:<FaIcons.FaCartPlus/>,
     cName: 'nav-text'
