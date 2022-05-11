@@ -126,7 +126,7 @@ export default class UpdateMaterial extends Component {
             <div className="container">
                 <div className="row">
                     <div className="card col-md-6 offset-md-3 offset-md-3">
-                        <h3 className="text-center">Update Material</h3>
+                        <h3 className="text-center">Update Product</h3>
                         <div className="card-body">
                             <form>
                                  <div className="form-group">
