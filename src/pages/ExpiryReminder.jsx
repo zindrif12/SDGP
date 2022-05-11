@@ -28,9 +28,7 @@ function ExpiryReminder(props){
            
         
         
-        // .then((resp) => {
-        //   console.log("the list after deleting...", resp);
-    
+       
 
     const{ExpiryList} = props;
     return(
